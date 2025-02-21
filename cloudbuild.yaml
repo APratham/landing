@@ -1,3 +1,6 @@
+options:
+  logging: CLOUD_LOGGING_ONLY  # or CLOUD_LOGGING_AND_GCS, or NONE depending on your needs
+
 steps:
   # Deploy to App Engine
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
