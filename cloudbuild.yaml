@@ -4,4 +4,4 @@ steps:
     entrypoint: 'gcloud'
     args: ['app', 'deploy', '--quiet']  # Deploy to App Engine without asking for confirmation
 
-timeout: '600s'  # Optional: Timeout for the build process (e.g., 10 minutes)
+timeout: '600s'  # Optional: Timeout 
