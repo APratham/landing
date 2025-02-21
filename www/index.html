@@ -1,5 +1,6 @@
 <head>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/carousel.js" defer></script>
 </head>
 
 <header id="header" class="menu-container">
@@ -129,23 +130,33 @@
 
 <!--Content starts-->
 <section class="video-content">
-
-  <div class="video-story">
-    <h1 class="video-title">See it in Action</h1>
-    <br>
-    <p class="video-subtitle">Story of Theodore</p>
-    <div class='embed-container'>
-      <iframe id="video" src="https://www.youtube-nocookie.com/embed/ne6p6MfLBxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1 class="video-title">See it in Action</h1>
+  <br>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- First Video -->
+      <div class="carousel-item">
+        <iframe src="https://www.youtube-nocookie.com/embed/_k-F-MMvQV4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Second Video -->
+      <div class="carousel-item">
+        <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Image -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x450" alt="Sample Image">
+      </div>
     </div>
   </div>
 
+  <!-- Navigation Dots -->
   <div class="three-dots">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span class="dot active" onclick="moveToSlide(0)"></span>
+    <span class="dot" onclick="moveToSlide(1)"></span>
+    <span class="dot" onclick="moveToSlide(2)"></span>
   </div>
-
 </section>
+
 
 <section class="content">
 
